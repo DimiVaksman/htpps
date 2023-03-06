@@ -17,7 +17,7 @@ async function loadWeather(e){
     <img src="./img/__Iphone-spinner-1.gif" alt="loading">
 </div>
     `
-    const server = 'https://api.openweathermap.org/data/3.0/weather?units=metric&q=Kyiv&appid=9475306a5157517d0ed2746162fabae3'
+    const server = 'https://api.openweathermap.org/data/2.5/weather?q=Cloppenburg,de&APPID=9475306a5157517d0ed2746162fabae3&units=metric'
 
     const response = await fetch(server, {method: 'GET' ,} );
 
