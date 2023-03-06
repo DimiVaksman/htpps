@@ -45,11 +45,11 @@ function getWeather (data) {
         <div class="weather__status">${weatherStatus}</div>
     </div>
     <div class="weather__icon">
-        <img src="http://openweathermap.org/img/w/${weatherIcon}.png" alt="Clouds" width="50" height="30">
+        <img class="img-status" src="http://openweathermap.org/img/w/${weatherIcon}.png" alt="Clouds" width="50" height="40">
     </div>           
 </div>   
-<div class="weather__temp">${temp}</div>    
-<div class="weather__feels-like">Feels like: ${feelsLike}</div>    `
+<div class="weather__temp"> t <span class="span">${temp}</span>°C</div>    
+<div class="weather__feels-like">Feels like: <span class="span">${feelsLike}</span></div>    `
 
 refs.weatherBlock.innerHTML = template;
 
